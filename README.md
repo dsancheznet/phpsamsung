@@ -1,7 +1,7 @@
-#Samsung Smart TV Control
+# Samsung Smart TV Control
 This class allows a server side script con cotrol a locally accessible TV set to be controlled from it.
 
-##Usage
+## Usage
 Copy `SamsungControl.inc.php` to the library directory of your choice on your server and include it in your script. Then, instantiate the SamsungControl-Class and you'll be ready to go. You will need to provide the following data to the script for it to connect successfully to your TV (quoted form):
 
 * **IP\_OF\_YOUR\_TV**
@@ -52,12 +52,12 @@ The keys that can be sent to the TV are:
 |KEY_CONTENTS       |SmartHub
 
 
--The first time you execute the script, your TV is going to prompt the user to accept the connection, and once the user allows it to acces the TV functions it is going to work without further allowances.
+- The first time you execute the script, your TV is going to prompt the user to accept the connection, and once the user allows it to access the TV functions it is going to work without further allowances.
 
--To revoke a permission, you need to go to **MENU**>**NETWORK**>**ALLSHARE CONFIGURATION**>**CONTENTS EXCHANGE** and delete the allowed remote.
+- To revoke a permission, you need to go to **MENU**>**NETWORK**>**ALLSHARE CONFIGURATION**>**CONTENTS EXCHANGE** and delete the allowed remote.
 
-###Sample script
-```
+### Sample script
+```PHP
 <?php
 
 	include_once('SamsungControl.inc.php);
